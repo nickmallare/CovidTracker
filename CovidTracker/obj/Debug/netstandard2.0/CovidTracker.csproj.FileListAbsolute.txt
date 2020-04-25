@@ -1,0 +1,16 @@
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/CountryData/View/CountriesDataView.xaml.g.cs
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/MenuMain/View/MenuMainView.xaml.g.cs
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/TotalData/View/TotalDataView.xaml.g.cs
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/CovidTracker.csproj.CoreCompileInputs.cache
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/CovidTracker.AssemblyInfoInputs.cache
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/CovidTracker.AssemblyInfo.cs
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/bin/Debug/netstandard2.0/CovidTracker.deps.json
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/bin/Debug/netstandard2.0/CovidTracker.dll
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/bin/Debug/netstandard2.0/ref/CovidTracker.dll
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/bin/Debug/netstandard2.0/CovidTracker.pdb
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/CovidTracker.dll
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/ref/CovidTracker.dll
+/Users/nickmallare/Projects/CovidTracker/CovidTracker/obj/Debug/netstandard2.0/CovidTracker.pdb

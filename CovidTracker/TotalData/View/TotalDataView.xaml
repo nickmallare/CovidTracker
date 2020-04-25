@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CovidTracker.TotalData.View.TotalDataView"
+             xmlns:VM="clr-namespace:CovidTracker.TotalData.ViewModel">
+   <ContentPage.BindingContext>
+        <VM:TotalDataViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Grid Padding="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition  Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Confirmed Cases:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Confirmed}" TextColor="Black" FontSize="Medium"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Recovered Patients:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Recovered}" TextColor="Black" FontSize="Medium"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Critical Cases:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Critical}" TextColor="Black" FontSize="Medium"/>
+
+        
+            <Label Grid.Row="3" Grid.Column="0" Text="Number of Deaths:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Deaths}" TextColor="Black" FontSize="Medium"/>
+
+        </Grid>
+        <Button Text="Update" VerticalOptions="End" HorizontalOptions="Center" Command="{Binding UpdateTimeCommand}"/>
+        <Label Text = "{Binding TimeUpdated}" HorizontalOptions="Center"/>
+    </StackLayout>
+
+
+</ContentPage>

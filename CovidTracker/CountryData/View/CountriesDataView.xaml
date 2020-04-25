@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CovidTracker.CountryData.View.CountriesDataView"
+             xmlns:VM="clr-namespace:CovidTracker.CountryData.ViewModel">
+     <ContentPage.BindingContext>
+        <VM:CountriesDataViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="30">
+        <Picker Title="Select A Country..." ItemsSource="{Binding Countries}"  SelectedItem="{Binding SelectedCountry}"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition  Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Confirmed Cases:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Confirmed}" TextColor="Black" FontSize="Medium"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Recovered Patients:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Recovered}" TextColor="Black" FontSize="Medium"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Critical Cases:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Critical}" TextColor="Black" FontSize="Medium"/>
+
+        
+            <Label Grid.Row="3" Grid.Column="0" Text="Number of Deaths:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" />
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Deaths}" TextColor="Black" FontSize="Medium"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
